@@ -25,7 +25,7 @@ class SideBar extends Component {
         this.getCurLocation()
     }
     getCurLocation() {
-        console.log(this.props);
+       // console.log(this.props);
     }
 }
 

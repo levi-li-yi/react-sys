@@ -1,8 +1,9 @@
 import {combineReducers} from 'redux'
-import reducer from './itemType'
+import {dictReducer} from './dictStore'
+import {userReducer} from './userStore'
 
 const reducers = combineReducers({
-    reducer
+    dictReducer,
+    userReducer,
 });
-
 export default reducers;

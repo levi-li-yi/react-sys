@@ -6,7 +6,8 @@ import {Provider} from 'react-redux';
 import store from './store'
 
 function App() {
-  return (
+    console.log(store.getState());
+    return (
     <Router>
         <Suspense fallback={<div>Loading...</div>}>
             <Provider store={store}>
