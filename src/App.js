@@ -10,6 +10,7 @@ function App() {
     return (
     <Router>
         <Suspense fallback={<div>Loading...</div>}>
+            {/*将store统一当做props注入全局*/}
             <Provider store={store}>
                 <div className="App">
                     {
