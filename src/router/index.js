@@ -1,6 +1,7 @@
 import {lazy} from 'react';
 import teachingData from './teachingData'
 import messageData from './messageData'
+import hooksPage from './hooksPage'
 
 let router = [
     {
@@ -9,7 +10,8 @@ let router = [
         Components: lazy(() => import('../page/layout/Layout')),
         routes: [
             ...teachingData,
-            ...messageData
+            ...messageData,
+            ...hooksPage,
         ]
     }
 ];
