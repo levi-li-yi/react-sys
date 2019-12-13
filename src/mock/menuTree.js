@@ -31,6 +31,10 @@ let menuTree = [
                 name: 'Hook页面',
                 href: 'hooksPage',
             },
+            {
+                name: '性能优化',
+                href: 'nextPage',
+            },
         ]
     }
 ]

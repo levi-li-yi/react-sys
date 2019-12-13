@@ -3,6 +3,7 @@ import Child from './component/Child'
 
 const CountContext = createContext();
 
+/*子组件*/
 function Counter() {
     const count = useContext(CountContext);
     return (<h2>{count}</h2>)
