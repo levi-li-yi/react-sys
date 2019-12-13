@@ -26,7 +26,12 @@ let menuTree = [
     {
         name: '提示管理',
         href: 'alarmData',
-        children: []
+        children: [
+            {
+                name: 'Hook页面',
+                href: 'hooksPage',
+            },
+        ]
     }
 ]
 
