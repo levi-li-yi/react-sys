@@ -1,11 +1,17 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import Child from './component/Child'
 
 function NextPage() {
     const [user, setUser] = useState('用户');
     const [manager, setManager] = useState('管理员');
+    const inputEl = useRef(null);
+    const getRef = () => {
+        console.log(inputEl.current.value);
+    };
     return (
         <div>
+            <input type="text" ref={inputEl}/>
+            <button onClick={getRef}>Ref</button>
             {/*setUser触发user的变化*/}
             <button onClick={() => {setUser('JACK' + Math.random())}}>用户点击</button>
             {/*setManager触发管理员的变化*/}
