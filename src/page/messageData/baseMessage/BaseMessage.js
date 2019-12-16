@@ -3,6 +3,7 @@ import {Input, Button} from 'antd'
 import store from 'store/index'
 import {dictAction} from 'store/dictStore'
 
+/*该组件在状态管理上采用纯redux的方法: 组件中订阅的派发store*/
 class BaseMessage extends Component {
     constructor(props) {
         super(props);

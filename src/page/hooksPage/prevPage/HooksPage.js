@@ -6,7 +6,7 @@ const CountContext = createContext();
 /*子组件*/
 function Counter() {
     const count = useContext(CountContext);
-    return (<h2>{count}</h2>)
+    return (<h2>{count + 'number'}</h2>)
 }
 
 function HooksPage() {
