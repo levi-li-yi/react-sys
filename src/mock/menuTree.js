@@ -35,6 +35,10 @@ let menuTree = [
                 name: '性能优化',
                 href: 'nextPage',
             },
+            {
+                name: '状态管理',
+                href: 'reduxPage',
+            },
         ]
     }
 ]
