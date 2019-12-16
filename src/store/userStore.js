@@ -20,7 +20,7 @@ export function userReducer(state = initState, action) {
     if (action.type === types.ADD) {
         let newState = JSON.parse(JSON.stringify(state));
         if (newState.inputTypeValue) {
-            newState.typeList.push(newState.inputTypeValue)
+            newState.typeList.push(newState.inputTypeValue);
             newState.inputTypeValue = '';
             return newState
         }
