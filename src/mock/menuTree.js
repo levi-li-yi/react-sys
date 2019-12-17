@@ -40,7 +40,17 @@ let menuTree = [
                 href: 'reduxPage',
             },
         ]
-    }
+    },
+    {
+        name: '组件练习',
+        href: 'hocPage',
+        children: [
+            {
+                name: '高阶组件',
+                href: 'hocPage',
+            },
+        ]
+    },
 ]
 
 export default menuTree;

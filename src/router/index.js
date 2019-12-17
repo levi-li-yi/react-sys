@@ -2,6 +2,7 @@ import {lazy} from 'react';
 import teachingData from './teachingData'
 import messageData from './messageData'
 import hooksPage from './hooksPage'
+import hocPage from './hocPage'
 
 let router = [
     {
@@ -12,6 +13,7 @@ let router = [
             ...teachingData,
             ...messageData,
             ...hooksPage,
+            ...hocPage
         ]
     }
 ];
