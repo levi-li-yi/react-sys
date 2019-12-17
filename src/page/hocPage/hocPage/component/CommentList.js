@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 class CommentList extends Component {
-    return() {
+    render() {
         return (
             <div>class CommentList</div>
         )
