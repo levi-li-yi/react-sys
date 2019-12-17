@@ -3,6 +3,7 @@ import CommentList from './component/CommentList';
 import BlogPost from './component/BlogPost';
 import WithSubscription from './component/WithSubscription'
 
+/*WithSubscription函数：返回类组件*/
 const CommentListWithSubscription = WithSubscription(
     CommentList,
     (DataSource) => DataSource.getComments()
@@ -23,7 +24,7 @@ class HocPage extends Component {
             'text-align': 'center'
         };
         return (
-            <div style={style}>
+            <div>
                 <CommentListWithSubscription />
                 <BlogPostWithSubscription />
             </div>
