@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import DataSource from './DataSource';
 
+/*HOC高阶组件核心方法*/
 let withSubscription = (WrappedComponent, selectData) => {
     return class extends Component {
         constructor(props) {
@@ -28,6 +29,7 @@ let withSubscription = (WrappedComponent, selectData) => {
             return (
                 <div style={style}>
                     <div>This is a HOC Component</div>
+                    {/*传入状态state、传入props*/}
                     <WrappedComponent data={this.state.data} {...this.props}/>
                 </div>
             )
