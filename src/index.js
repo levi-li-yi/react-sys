@@ -4,7 +4,7 @@ import 'antd/dist/antd.css'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './assets/font/iconfont.css';
+import 'assets/font/iconfont.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
